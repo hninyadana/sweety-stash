@@ -1,0 +1,15 @@
+[theme]
+# The primary color for buttons and focus states (A nice soft pink)
+primaryColor = "F7B7B7"
+
+# The background color of the main content area (Very pale pink/white)
+backgroundColor = "#FFF7F7"
+
+# The background color of the sidebar (A slightly deeper pastel pink)
+secondaryBackgroundColor = "F5F0F0"
+
+# The color of the text (Dark gray is softer than black)
+textColor = "#374151"
+
+# Font family (Sans serif looks cleaner and cuter)
+font = "sans serif"

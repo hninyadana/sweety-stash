@@ -1,42 +1,14 @@
+run = "streamlit run main.py"
 modules = ["python-3.11"]
+[env]
+PORT = "8501"
+
 [agent]
 expertMode = true
 
 [nix]
-channel = "stable-25_05"
-
-[workflows]
-runButton = "Project"
-
-[[workflows.workflow]]
-name = "Project"
-mode = "parallel"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "workflow.run"
-args = "Flask App"
-
-[[workflows.workflow]]
-name = "Flask App"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "python app.py"
-waitForPort = 5000
-
-[workflows.workflow.metadata]
-outputType = "webview"
+packages = ["glibcLocales"]
 
 [[ports]]
-localPort = 5000
+localPort = 8501
 externalPort = 80
-
-[[ports]]
-localPort = 32785
-externalPort = 3000
-
-[deployment]
-deploymentTarget = "autoscale"
-run = ["gunicorn", "--bind=0.0.0.0:5000", "--reuse-port", "app:app"]

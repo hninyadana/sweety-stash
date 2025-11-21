@@ -1,9 +1,13 @@
 [project]
-name = "repl-nix-workspace"
+name = "repl-nlx-workspace"
 version = "0.1.0"
-description = "Add your description here"
+description = "Improve financial tracking by enhancing API requests."
 requires-python = ">=3.11"
 dependencies = [
-    "flask>=3.1.2",
-    "gunicorn>=23.0.0",
+# Removed "flask" and "gunicorn". Added "streamlit" and necessary packages.
+"streamlit>=1.0.0",
+# Add any other core dependencies here (e.g., pandas, requests)
 ]
+
+[tool.pdm.dev-dependencies]
+
