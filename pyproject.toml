@@ -6,11 +6,13 @@
 requires = ["setuptools>=61.0.0"]
 build-backend = "setuptools.build_meta"
 
+
+
 [project]
 
 #This table is added to prevent the "No project table found" error.
 
-name = "main.py"
+name = "streamlit-app"
 version = "0.0.1"
 description = "A Streamlit application."
 requires-python = ">=3.11"
