@@ -1,3 +1,5 @@
 streamlit
 pandas
 plotly
+requests
+# Any other standard library you need
