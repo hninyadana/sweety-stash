@@ -3,7 +3,7 @@
 # via the Procfile, not installed as a library.
 
 [project]
-name = "my-streamlit-app"
+name = "streamlit_app"
 version = "0.0.1"
 description = "A simple Streamlit application"
 requires-python = ">=3.9"
