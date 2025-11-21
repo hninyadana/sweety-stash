@@ -1,6 +1,18 @@
-# This minimal configuration satisfies the requirement for a pyproject.toml
-# but prevents the build system from attempting to create a formal Python package.
-# This is the correct approach for deploying simple, script-based Streamlit apps.
+# This configuration satisfies the installer's need for a defined project
+# while remaining minimal for a Streamlit app that is executed directly
+# via the Procfile, not installed as a library.
+
+[project]
+name = "sweety-stash"
+version = "0.0.1"
+description = "A simple Streamlit application"
+requires-python = ">=3.9"
+
+# Dependencies should still be listed in requirements.txt
+dependencies = [
+    # No need to list dependencies here if you use requirements.txt,
+    # but the array must exist.
+]
 
 [build-system]
 requires = ["setuptools>=61.0.0"]
