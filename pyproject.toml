@@ -1,3 +1,24 @@
+This file is intentionally minimal.
+
+It satisfies the build system's requirement for a [project] table,
+
+while the actual list of dependencies for the Streamlit app
+
+are provided separately in 'requirements.txt'.
+
 [build-system]
 requires = ["setuptools>=61.0.0"]
 build-backend = "setuptools.build_meta"
+
+[project]
+
+This table is added to prevent the "No project table found" error.
+
+name = "sweety-stash-app"
+version = "0.0.1"
+description = "A Streamlit application."
+requires-python = ">=3.11"
+
+The dependencies section is intentionally omitted or left empty here,
+
+forcing the deployment system to use the contents of requirements.txt.
